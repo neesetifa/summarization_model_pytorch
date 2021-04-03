@@ -1,8 +1,8 @@
 import torch
 import pandas as pd
-from dataset import MyDataset, my_collate_fn
+from dataset import MyDataset
 from models.model_lstm import LSTM_Model
-from utils import load_vocab, evaluate, beam_search
+from utils import load_vocab, evaluate
 import config
 
 

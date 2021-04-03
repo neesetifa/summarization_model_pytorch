@@ -50,7 +50,7 @@ def beam_search(s, model, device, char2id, id2char, beam_width = 3, max_len = 64
     xid = np.array([str2id(s, char2id)] * beam_width)
     yid = np.array([[2]] * beam_width)
     scores = [0] * beam_width
-    len_s = len(s)
+    len_s = len(xid[0])
 
     for i in range(max_len):
         model.eval()
