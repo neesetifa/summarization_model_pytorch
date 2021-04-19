@@ -37,7 +37,7 @@ def str2id(strings, char2id, start_end = False):
     if start_end:  # <start>+summary+<end> for summary
         ids = [char2id.get(c, 1) for c in strings[:config.max_len - 2]]
         ids = [2] + ids + [3]
-    else:  for text
+    else:  # for text
         ids = [char2id.get(c, 1) for c in strings[:config.max_len]]
     return ids
 
