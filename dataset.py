@@ -34,29 +34,4 @@ class MyDataset(torch.utils.data.Dataset):
         text = str2id(text, self.char2id)
         summary = str2id(summary, self.char2id, start_end = True)
         return torch.tensor(text), torch.tensor(summary)
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+             
