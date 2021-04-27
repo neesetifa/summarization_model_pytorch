@@ -1,3 +1,4 @@
-# summarization_pytorch
-This is a PyTorch(1.6) version implementation.
-I didn't use any tricky library/function, so it should be ok under various pytorch version.
+# Summarization Seq2seq Model - PyTorch
+
+This is a Chinese news summarization model written in PyTorch(1.6).
+I didn't use any tricky library/function, so it should be ok under various PyTorch version.
