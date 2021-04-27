@@ -28,11 +28,14 @@ def main():
                        embedding_size = config.embedding_size,
                        hidden_size = config.hidden_size,
                        device = device).to(device)
-
-    # For CPU
+    
+    # Load model
+    # 1. For CPU
     #model.load_state_dict(torch.load('saved_weight/saved_model_on_epoch_74.pth', map_location=torch.device('cpu') ))
-    # For GPU
+    # 2. For GPU
     model.load_state_dict(torch.load('saved_weight/saved_model_on_epoch_74.pth')
+    
+    # Evaluate
     evaluate(test_data_loader, model, device, char2id, id2char)
 
 if __name__ == '__main__':
