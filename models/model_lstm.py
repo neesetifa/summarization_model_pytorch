@@ -209,28 +209,3 @@ class LSTM_Model(nn.Module):
         xy = self.softmax(xy)
         # xy shape [batch_size, seq_len_y, vocab_size + 4]
         return xy
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
