@@ -11,7 +11,8 @@ TODO:
 - [x] Seq2Seq model(LSTM as basic block), training from scratch, w/ multi-head attention and prior knowledge, use beam search for decoding
 - [ ] Use pretrained embedding instead of training from scratch
 - [ ] top-k/top-p decoding
-- [ ] GPT-2 w/ improved mask
+- [ ] GPT-2 small w/ and w/o finetune
+- [ ] GPT-2 small w/ improved mask
 - [ ] train w/ r-drop
 - [ ] Extractive Summarization w/ BERT
 - [ ] Trie Tree
