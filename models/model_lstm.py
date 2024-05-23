@@ -26,7 +26,7 @@ class Attention(nn.Module):
         
         self.num_attention_heads = num_attention_heads
         self.attention_head_size = int(hidden_size / num_attention_heads)
-        self.all_head_size = self.num_attention_heads * self.attention_head_size
+        self.all_head_size = self.num_attention_heads * self.attention_head_size # usually we let all_head_size == hidden_size, but not necessary
         
         # usually hidden_size = all_head_size
         self.query = nn.Linear(hidden_size, self.all_head_size)
@@ -106,7 +106,7 @@ class Attention(nn.Module):
         if q_mask is not None:
             output = self.mask(output, q_mask, mode = 'mul')
         
-        # [batch_size, seq_len_q, hidden_size]
+        # [batch_size, seq_len_q, all_head_size]
         return output
         
         
